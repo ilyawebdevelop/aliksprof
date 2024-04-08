@@ -1,0 +1,40 @@
+.advantages {
+  &List {
+    column-gap: 2.5rem;
+    @media(max-width: 1199px){
+      column-gap: 2rem;    
+      row-gap: 2rem;
+    }
+    @media(max-width: 575px){
+      column-gap: 1.3rem;
+      row-gap: 1.3rem;
+    }
+  }
+  &Item {
+    display: flex;
+    align-items: center;
+    column-gap: 1.3rem;
+    grid-column: 3 span;
+    background-color: #fff;
+    padding: 2.4rem 3rem 2.3rem 2rem;
+    @media(max-width: 1199px){
+      grid-column: 6 span;
+    }
+    @media(max-width: 575px){
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 1rem;
+      padding: 1.5rem 2rem 2rem 2rem;
+    }
+    &Img {
+      @media(max-width: 575px){
+        min-height: 4.3rem;
+        width: 4.5rem;
+      }
+    }
+    &Text {
+      font-size: 1.5rem;
+      line-height: normal;
+    }
+  }
+}

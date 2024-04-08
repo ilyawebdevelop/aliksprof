@@ -1,0 +1,10 @@
+.partners {
+  &Slider {
+    .swiper-wrapper {
+      align-items: center;
+    }
+  }
+  &Slide {
+    width: auto;
+  }
+}

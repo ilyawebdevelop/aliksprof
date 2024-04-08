@@ -1,0 +1,30 @@
+// modal
+.modal {
+  display: none;
+  width: 60rem;
+  padding: 5rem;
+  @media(max-width: 420px){
+    padding: 3rem;
+  }
+  &Descr {
+    margin-top: 1.5rem;
+    max-width: 35rem;
+    margin-bottom: 1.5rem;
+  }
+  &Content {
+    position: relative;
+    z-index: 1;
+  }
+  &Head {
+   
+    h2 {
+      position: relative;
+      z-index: 41;
+    }
+  }
+  .btn-close {
+    background: none;
+    opacity: 1;
+  }
+}
+

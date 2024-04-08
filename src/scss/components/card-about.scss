@@ -1,0 +1,62 @@
+.cardsAbout {
+  &List {
+    column-gap: 2.5rem;
+    row-gap: 2.5rem;
+    @media(max-width: 1199px){
+      column-gap: 2rem;    
+      row-gap: 2rem;
+    }
+    @media(max-width: 575px){
+      column-gap: 1.3rem;
+      row-gap: 1.3rem;
+    }
+  }
+
+  &Item {
+    grid-column: 6 span;
+    background-color: var(--secondary);
+    color: #fff;
+    padding-top: 5rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color .2s linear;
+    @media(max-width: 767px){
+     padding: 3rem;
+     grid-column: 12 span;
+    }
+    &:hover {
+      background-color: #000;
+    }
+
+    &Img {
+      margin-bottom: 3.5rem;
+      width: 11rem;
+      height: 14rem;
+      object-fit: contain;
+      @media(max-width: 767px){
+        height: fit-content;
+      }
+    }
+    &Title {
+      font-weight: 500;
+      font-size: 3.2rem;
+      line-height: 3.7rem;
+      margin-bottom: 10px;
+      text-align: center;
+      @media(max-width: 767px){
+        font-size: 2.5rem;
+        line-height: 3rem;
+      }
+    }
+    &Text {
+      font-size: 1.5rem;
+      max-width: 40rem;
+      text-align: center;
+      line-height: normal;
+    }
+  }
+}

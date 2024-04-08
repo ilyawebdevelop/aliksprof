@@ -1,0 +1,50 @@
+<section class="sect productSect">
+  <div class="container">
+
+    <div class="sectHead">
+      <h2 class="h2">Новинки</h2>
+      <a class="postMore" href="#">
+        <span>Перейти в каталог</span>
+        <svg>
+          <use xlink:href="@img/icons/icons.svg#arrow-post"></use>
+        </svg>
+      </a>
+    </div>
+
+    <div class="swiperWrapper">
+      <div class="swiper productSlider">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide productSlide">
+            @@include('product/card-1.html',{})
+          </div><!-- /productSlide -->
+          <div class="swiper-slide productSlide">
+            @@include('product/card-2.html',{})
+          </div><!-- /productSlide -->
+          <div class="swiper-slide productSlide">
+            @@include('product/card-3.html',{})
+          </div><!-- /productSlide -->
+          <div class="swiper-slide productSlide">
+            @@include('product/card-1.html',{})
+          </div><!-- /productSlide -->
+          <div class="swiper-slide productSlide">
+            @@include('product/card-2.html',{})
+          </div><!-- /productSlide -->
+          <div class="swiper-slide productSlide">
+            @@include('product/card-3.html',{})
+          </div><!-- /productSlide -->
+
+        </div>
+      </div>
+      <div class="productNavW navW--border navW--center">
+        <button class="navArrow navArrowPrev">
+          <img src="@img/icons/nav-prev.svg" alt="nav-prev">
+        </button>
+        <button class="navArrow navArrowNext">
+          <img src="@img/icons/nav-next.svg" alt="nav-next">
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>

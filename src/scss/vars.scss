@@ -1,0 +1,36 @@
+// Colors
+$main-color: #000;
+
+// Fonts
+$font-family: 'avenirnextcyr', sans-serif;
+$font-family-text: 'Inter', sans-serif;
+$font-family-roboto: 'Roboto', sans-serif;
+
+// Font-weights
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$extrabold: 800;
+$black: 900;
+
+ // Containers
+:root { 
+  --content-width: 1820px;
+  --content-fluid-width: 1700px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-fluid-width: calc(var(--content-fluid-width) + (var(--container-offset) * 2));
+  --outline: #EAEAEA;
+  --black: #000;
+  --gray: #999999;
+  --background: #F6F6F6;
+  --success: #27c340;
+  --error: #e02828;
+  --yellow: #ffc529;
+  --disabled: #c5cfdc;
+  --tetriary: #abc4e4;
+  --primary: #2f80ed; 
+  --secondary: #2B2731;  
+}

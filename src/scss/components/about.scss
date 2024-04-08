@@ -1,0 +1,27 @@
+.about {
+  &Content {
+    grid-column: 6 span;
+    padding-right: 5rem;
+    @media(max-width: 991px){
+      padding-right: 4rem;
+    }
+    @media(max-width: 767px){
+      grid-column: 12 span;
+      padding-right: 0;
+    }
+  }
+  &Image {
+    grid-column: 6 span;
+    border-radius: 5px;
+    height: 41rem;
+    width: 100%;
+    object-fit: cover;
+    @media(max-width: 767px){
+      grid-column: 12 span;
+      margin-top: 3rem;
+    }
+    @media(max-width: 575px){
+      height: 55vw;
+    }
+  }
+}

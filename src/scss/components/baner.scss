@@ -1,0 +1,70 @@
+.baner {
+  &Slider {
+    &+.swiper-pagination {
+      position: unset;
+      margin-top: 1.5rem;
+    }
+  }
+
+  &Slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 31rem;
+    padding-top: 2.7rem;
+    padding-bottom: 2.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    height: auto;
+    @media(max-width: 767px){
+      padding-bottom: 7rem;
+    }
+
+    &Content {
+      background-color: #F6F6F6;
+      width: fit-content;
+      margin-left: auto;
+      height: 100%;
+      padding-top: 4rem;
+      padding-right: 5rem;
+      padding-bottom: 4.5rem;
+      padding-left: 4.3rem;
+      width: 46rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      @media(max-width: 575px){
+        width: 100%;
+        padding: 3rem;
+      }
+    }
+
+    &Title {
+      line-height: normal;
+    }
+
+    &Descr {
+      max-width: 36rem;
+      line-height: normal;
+      margin-top: 9px;
+    }
+  }
+}
+
+.banerNavW {
+  display: flex;
+  column-gap: 12px;
+  position: absolute;
+  left: 28px;
+  bottom: 28px;
+  z-index: 1;
+  @media(max-width: 767px){
+    left: unset;
+    right: 20px;
+    bottom: 1.4rem;
+  }
+}
