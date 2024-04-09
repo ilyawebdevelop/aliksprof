@@ -1337,6 +1337,29 @@ h3 {
   }
 }
 
+.shopFilterBtn {
+  height: 51px;
+  margin-top: 2.5rem;
+  width: 100%;
+}
+
+.productLoadMore {
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 33%;
+}
+@media (max-width: 767px) {
+  .productLoadMore {
+    width: 30rem;
+  }
+}
+@media (max-width: 420px) {
+  .productLoadMore {
+    width: 100%;
+  }
+}
+
 /* Hamburger Menu */
 .hamburger {
   align-self: center;
@@ -1417,7 +1440,7 @@ h3 {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   font-size: 1.5rem;
-  row-gap: 10px;
+  row-gap: 4px;
 }
 
 .aioseo-breadcrumbs a {
@@ -2316,6 +2339,128 @@ h3 {
   .aboutImage {
     height: 55vw;
   }
+}
+
+.shopFilter {
+  grid-column: 3 span;
+}
+@media (max-width: 991px) {
+  .shopFilter {
+    grid-column: 12 span;
+  }
+}
+.shopFilterW {
+  background-color: #f8f8f8;
+  padding: 2.9rem 2.5rem 2.9rem 2.9rem;
+  border-radius: 5px;
+}
+.shopFilterTitle {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 2.3rem;
+}
+.shopContent {
+  grid-column: 9 span;
+}
+@media (max-width: 991px) {
+  .shopContent {
+    grid-column: 12 span;
+    margin-top: 4rem;
+  }
+}
+.shopList {
+  column-gap: 2.2rem;
+  row-gap: 2.2rem;
+}
+@media (max-width: 575px) {
+  .shopList {
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+}
+.shopList .productCard {
+  grid-column: 4 span;
+}
+@media (max-width: 1199px) {
+  .shopList .productCard {
+    grid-column: 6 span;
+  }
+}
+@media (max-width: 991px) {
+  .shopList .productCard {
+    grid-column: 4 span;
+  }
+}
+@media (max-width: 767px) {
+  .shopList .productCard {
+    grid-column: 6 span;
+  }
+}
+.shopGrid {
+  column-gap: 5rem;
+}
+@media (max-width: 1400px) {
+  .shopGrid {
+    column-gap: 3rem;
+  }
+}
+@media (max-width: 991px) {
+  .shopGrid {
+    column-gap: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .bapf_sfilter {
+    margin-top: 1.8rem;
+    padding-bottom: 1.8rem;
+  }
+}
+.bapf_sfilter h3 {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: normal;
+  position: relative;
+}
+.bapf_sfilter h3::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 12px;
+  background: url("../img/icons/filter-arrow.svg") no-repeat center/15px;
+  right: 0;
+  top: 8px;
+  transform: rotate(180deg);
+  transition: transform 0.2s linear;
+}
+
+.bapf_head.hidden h3::after {
+  transform: none;
+}
+
+.bapf_body {
+  margin-top: 2.2rem;
+}
+.bapf_body.hidden {
+  display: none;
+}
+.bapf_body li {
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+  font-size: 1.5rem;
+}
+.bapf_body li:not(:last-child) {
+  margin-bottom: 1.2rem;
+}
+.bapf_body li input {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0;
+}
+
+.berocket_single_filter_widget:not(:last-child) {
+  margin-bottom: 2.5rem;
 }
 
 .footer {

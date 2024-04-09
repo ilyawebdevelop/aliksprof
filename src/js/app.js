@@ -139,3 +139,10 @@ btnMenu?.addEventListener('click', function (e) {
 btnClose?.addEventListener('click', function (e) {
   menuClose();
 });
+
+$('.bapf_head').click(function() {
+  $(this).toggleClass('active');
+  $(this).toggleClass('hidden');
+  $(this).siblings('.bapf_body').slideToggle();
+  // $(this).siblings('.bapf_body').toggleClass('hidden');
+});
